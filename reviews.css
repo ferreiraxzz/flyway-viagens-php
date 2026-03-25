@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container{
+    width: 90%;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section_header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    color:  #000000;
+    line-height: 1.2;
+}
+
+.cards .swiper-pagination{
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+
+.cards .swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+    background-color: #8a4bb1;
+}
+
+.item{
+    background-color: #4e1472;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px #8a4bb1;
+}
+
+.item .info {
+    display: flex;
+    align-self: center;
+}
+
+.item img{
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.item .name{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.2;
+}
+
+.item .job{
+    text-transform: capitalize;
+    color: hsl(0, 0%, 100%);
+}
+
+.item p{
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.item .rating{
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%);
+}

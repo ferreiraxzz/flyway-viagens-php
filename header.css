@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 9vh;
+    padding: 0px 100px;
+    background: #b660ec;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo-img {
+    height: 48px; 
+    margin-top: 4px;
+    margin-right: 8px; 
+}
+
+.navbar a {
+    font-size: 16.5px;
+    font-style: uppercase;
+    font-weight: 400;
+    margin-left: 50px;
+    position: relative;
+    color: white    ;
+    margin-top: 20px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: whitesmoke;
+    transition: .2s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.user-menu {
+    position: relative;
+    display: flex;
+    margin-left: 40px;
+}
+
+.user-icon {
+    width: 40px;
+    margin-top: 10px;
+    height: 40px;
+    margin-left: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #c67af5;
+    min-width: 160px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.dropdown a:hover {
+    background-color: #d7b3f0;
+}
+
+.dropdown a.logout {
+    color: #e03131;
+    font-weight: bold;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Flyway</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gravar_style.css">
+    <link rel="shortcut icon" href="/Vreal/assets/flyway-icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="/Vreal/index/indexx.php" class="logo">
+            <img src="/Vreal/assets/flyway-icon.png" class="logo-img" alt="Flyway logo">
+            Flyway.com
+        </a>
+        <nav class="navbar">
+            <div class="user-menu">
+                <a href="/Vreal/index/indexx.php">Home</a>
+                <a href="/Vreal/index/indexx.php">Destinos</a>
+                <a href="/Vreal/login/login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-cadastro">
+            <div class="img-aviao">
+                <img src="/Vreal/assets/aviao.jpg" alt="Avião">
+            </div>
+            <div class="cadastro">
+                <form action="gravar.php" method="post">
+                    <h1>Preencha seus dados</h1>
+                    <div class="line"></div>
+                    <div class="inputs">
+                        <div class="input-box">
+                            <label>Nome completo</label>
+                            <input type="text" name="txt_usuario" maxlength="50" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Email</label>
+                            <input type="email" name="txt_email" maxlength="100" required>
+                        </div>
+                        <div class="select-box">
+                            <label for="pais">País de residência</label>
+                            <select id="pais" name="pais" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="Alemanha">Alemanha</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Arábia Saudita">Arábia Saudita</option>
+                                <option value="Austrália">Austrália</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Canadá">Canadá</option>
+                                <option value="China">China</option>
+                                <option value="Coreia do Sul">Coreia do Sul</option>
+                                <option value="Egito">Egito</option>
+                                <option value="Emirados Árabes Unidos">Emirados Árabes</option>
+                                <option value="Espanha">Espanha</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="França">França</option>
+                                <option value="Holanda">Holanda</option>
+                                <option value="Índia">Índia</option>
+                                <option value="Indonésia">Indonésia</option>
+                                <option value="Itália">Itália</option>
+                                <option value="Japão">Japão</option>
+                                <option value="México">México</option>
+                                <option value="Nigéria">Nigéria</option>
+                                <option value="Polônia">Polônia</option>
+                                <option value="Reino Unido">Reino Unido</option>
+                                <option value="Rússia">Rússia</option>
+                                <option value="Suécia">Suécia</option>
+                                <option value="Turquia">Turquia</option>
+                                <option value="Ucrânia">Ucrânia</option>
+                                <option value="Vietnã">Vietnã</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label>Senha</label>
+                            <input type="password" name="txt_senha" maxlength="100" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Gênero</label>
+                            <select name="txt_genero" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label>Data de Nascimento</label>
+                            <input type="date" name="txt_data" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Cadastrar" class="btn-cadastrar">
+                </form>
+                <div class="login-info">
+                    <p>Já possui uma conta? <a href="/Vreal/login/login.html">Clique aqui para fazer login</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

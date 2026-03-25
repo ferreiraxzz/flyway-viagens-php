@@ -1,0 +1,73 @@
+@import url(/Vreal/header.css);
+
+body {
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+}
+
+main.pacotes-container {
+    padding: 40px 80px;
+    text-align: center;
+}
+
+.pacotes-container h1 {
+    color: #692a91;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.pacotes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pacote-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.pacote-card h2 {
+    color: #b660ec;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.pacote-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+p.nenhum {
+    font-size: 18px;
+    color: #777;
+    margin-top: 30px;
+}
+
+.btn-pagar {
+    background-color: #692a91;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.btn-cancelar {
+    background-color: #e03131;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+

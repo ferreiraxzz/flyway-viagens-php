@@ -1,0 +1,408 @@
+@import url(/Vreal/header.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --text: #edf1f7;
+    --red: #c51212;
+    --blue: #0041c2;
+    --green: #14b02d;
+    --yellow: #ffc12b;
+    --purple: #ae1ff0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:  #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#section {
+    background-color:  #fafafa;
+    height: 20px;
+}
+
+.container{
+    width: 80%;
+    height: 185vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    border-radius: 0px 10px 10px 0px;
+    margin: 70px 120px 50px 120px;
+}
+
+.imagem_ref{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #692a91;
+    padding: 1rem;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.imagem_ref img{
+    width: 537px;
+    height: 1187px;
+    filter: opacity(0.8) ;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color:  #f2e9fa;
+    padding: 2rem;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.form_header{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_header h1:after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem; 
+    background-color:#b660ec ;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.inputs{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 0.7rem 0;
+}
+
+.input_box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px ;
+    width: 240px;
+}
+
+.input_box input{
+    margin: 0.6rem 0;
+    width: 230px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #e0bff5;
+    background-color:#f4ebfa;
+    padding: 12px;
+}
+
+.input_box input:hover{
+    background-color: #eeeeee75;
+}
+
+.input_box input:focus-visible{
+    outline: 1px solid #bf76ec;
+}
+
+.input_box input::placeholder{
+    color: #000000c0; 
+    position: relative;   
+}
+
+.input_box label, .genero_titulo h6, .select_box label{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;       
+}
+
+.select_box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px ;
+    width: 240px;
+}
+
+.select_box select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.6rem 0;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px  #e0bff5;
+    background-color:#f4ebfa ;
+    padding: 0 10px; 
+}
+
+.input_box select:hover{
+    background-color: #eeeeee75;
+}
+
+.input_box select:focus-visible{
+    outline: 1px solid #bf76ec ;
+    ;
+}
+
+.grupo_generos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.opcoes_genero{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.opcoes_genero input{
+    margin-right: 0.5rem;    
+}
+
+.opcoes_genero label{
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;       
+}
+
+.btn_continuar{
+    display: flex;
+    align-items: center;
+}
+
+.btn_continuar button{
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #b660ec;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn_continuar button:hover{
+    background-color: #4e1472;
+}
+
+.btn_continuar button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 200px 10px 200px;
+}
+
+/* Cadastro dos cartões */
+
+.form_card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.form_header_card{
+    margin-top: 30px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_header_card h1:after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem; 
+    background-color:#b660ec ;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.inputs_card_number{
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs_card{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 0;
+}
+
+.input_box_card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px ;
+    width: 240px;
+}
+
+.input_box_card input{
+    margin: 0.6rem 0;
+    width: 230px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px  #e0bff5;
+    background-color:#f4ebfa ;
+}
+
+.input_box_card input:hover{
+    background-color: #eeeeee75;
+}
+
+.input_box_card input:focus-visible{
+    outline: 1px solid #bf76ec;
+}
+
+.input_box_card input::placeholder{
+    color: #000000c0; 
+    padding-left: 10px;      
+}
+
+.select_box_card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px ;
+    width: 100px;
+}
+
+.select_box_card select{
+    display: flex;
+    flex-direction: row;
+    margin: 0.6rem 0;
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #e0bff5;
+    background-color:#f4ebfa ;
+    padding: 0 10px; 
+}
+
+.input_box select:hover{
+    background-color: #eeeeee75;
+}
+
+.input_box select:focus-visible{
+    outline: 1px solid #bf76ec ;
+}
+
+.text_card{
+    text-align: justify;
+    height: 50px;
+    float: right;
+    color: #692a91;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1330px) {
+    .imagem_ref {
+        display: none;
+    }
+
+    .container{
+    width: 50%;       
+    }
+
+    .form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 1064px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .inputs{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+    .inputs_genero{
+       margin-top: 2rem; 
+    }
+    .grupo_generos{
+        flex-direction: column ;
+    }
+    .opcoes_genero{
+        margin-top: 0.5rem;
+    }
+}
+.user-menu {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #c67af5;
+    min-width: 160px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #9800f7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.dropdown a:hover {
+    background-color: #d7b3f0;
+}
+
+.dropdown a.logout {
+    color: #e03131;
+    font-weight: bold;
+}

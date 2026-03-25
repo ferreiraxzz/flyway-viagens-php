@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#background_outdoor{
+    position: absolute;
+    inset: 1;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#background_outdoor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#background_outdoor::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.outdoor_info {
+    width: 100%;
+    max-width: 570px;
+    padding-left: 50px;
+    padding-top: 240px;
+}
+
+.outdoor_button {
+    width: 100%;
+    max-width: 570px;
+    padding-left: 50px;
+    padding-top: 240px;
+    margin-left: 205px;
+    margin-top: 310px;
+}
+
+.outdoor_button button {
+    align-self: flex-start;
+    width: 230px;
+    height: 47px;
+    background-color: #ca9de6;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    float: right;
+    margin-right: 100px;
+}
+
+.outdoor_button button:hover{
+    background-color: #b660ec;
+    opacity: 0.9;
+}
+
+.outdoor_info h2{
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 0px 2px; 
+    color: whitesmoke; 
+}
+
+.outdoor_info p{
+    font-size: 24px;
+    margin: 15px 0px 20px;
+    color: whitesmoke; 
+    font-family: "Poppins", sans-serif;
+}
+
+.outdoor_info div {
+    display: flex;
+    column-gap: 32px;
+}
+
+.outdoor_info div a, .outdoor_info div button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+    transform: skew(-10deg);
+}
+
+.outdoor_info div a{
+    background: #ca9de6;
+}
+
+.outdoor_info .button_compra{
+    background: transparent;
+    border: 1px solid var(--purple);
+}
+.outdoor_info .button_compra:hover{
+    background: var(--purple);
+    border: 1px solid var(--purple);
+}

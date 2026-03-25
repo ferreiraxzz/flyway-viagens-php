@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(/Vreal/header.css);
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.mensagem {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fafafa;
+    border: 2px solid rgb(230, 96, 96);
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(228, 64, 64) ;
+    margin-top: 50px;
+}
+
+.mensagem_2{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fafafa;
+    border: 2px solid rgb(96, 230, 103);
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(64, 228, 78) ;
+    margin-top: 50px;
+}
+
+.prices button{
+    align-self: flex-start;
+    width: 130px;
+    height: 47px;
+    background-color: #692a91;
+    border: none;
+    margin-top: 40px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+ }
+
+ .prices button a{
+    color:  #fff8f8;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+    padding: 15px 30px 16px 30px;
+}
+
+.prices button:hover{
+    background-color: #b660ec;
+    opacity: 0.9;
+}
