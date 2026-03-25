@@ -34,8 +34,8 @@ Vreal/
 ├── flyway.sql              ← banco de dados para importar
 ├── header.css
 ├── reviews.css
-├── index/                  ← página inicial
-├── login/                  ← autenticação
+├── index/                  ← home
+├── login/                  ← página inicial e autenticação
 ├── cadastro/               ← cadastro de usuários e conexão com banco
 │   └── conexao.php         ← configuração do banco de dados
 ├── destinos/               ← páginas de cada destino
